@@ -9,7 +9,7 @@ void SSTF(int req[], int head, int n) {
 
     seq[seqIdx++] = head;
     for (int count = 0; count < n; count++) {
-        int minDist = INT_MAX, idx = -1;
+        int minDist = INT_MAX, idx = -1; 
         for (int i = 0; i < n; i++) {
             if (!accessed[i] && abs(req[i] - head) < minDist) {
                 minDist = abs(req[i] - head);
